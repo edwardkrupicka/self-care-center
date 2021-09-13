@@ -35,8 +35,10 @@ var mantras = [
 var affirmationBtn = document.querySelector("#rd1");
 var mantraBtn = document.querySelector("#rd2");
 var receiveMessageBtn = document.querySelector("#receive-message");
+var clearMessageBtn = document.querySelector("#clear-message");
 
 receiveMessageBtn.addEventListener('click', createMessage);
+clearMessageBtn.addEventListener('click', clearMessage);
 
 console.log(affirmationBtn);
 
@@ -52,5 +54,13 @@ function createMessage() {
     message.innerText = randomAffirmation;
   } else if (mantraBtn.checked) {
     message.innerText = randomMantra;
+  }
+}
+
+function clearMessage() {
+  var message = document.querySelector(".message");
+  var meditateImg = `<img class="meditation-svg" src="assets/meditate.svg" alt="meditation person">`
+  if(message.innerText !== meditateImg) {
+    message.innerHTML = `<img class="meditation-svg" src="assets/meditate.svg" alt="meditation person">`
   }
 }
