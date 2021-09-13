@@ -20,7 +20,7 @@ body {
 h1 {
   color: #ffffff;
   padding-top: 2%;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   text-align: center;
 }
 
@@ -66,7 +66,7 @@ h2 {
 
 #output-box {
   background-color: #ffffff;
-  width: 600px;
+  width: 700px;
   height: 100px;
   border-radius: 10px;
   padding: 20px;
@@ -79,8 +79,8 @@ h2 {
 
 img {
   display: block;
-  width: 15%;
-  margin: auto;
+  width: 10%;
+  margin: auto
 }
 .message {
   text-align: center;
