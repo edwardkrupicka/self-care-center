@@ -40,8 +40,6 @@ var clearMessageBtn = document.querySelector("#clear-message");
 receiveMessageBtn.addEventListener('click', createMessage);
 clearMessageBtn.addEventListener('click', clearMessage);
 
-console.log(affirmationBtn);
-
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
 }
@@ -59,8 +57,5 @@ function createMessage() {
 
 function clearMessage() {
   var message = document.querySelector(".message");
-  var meditateImg = `<img class="meditation-svg" src="assets/meditate.svg" alt="meditation person">`
-  if(message.innerText !== meditateImg) {
-    message.innerHTML = `<img class="meditation-svg" src="assets/meditate.svg" alt="meditation person">`
-  }
+  message.innerHTML = `<img class="meditation-svg" src="assets/meditate.svg" alt="meditation person">`
 }
