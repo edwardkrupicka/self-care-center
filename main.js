@@ -34,9 +34,9 @@ var mantras = [
 
 var affirmationBtn = document.querySelector("#rd1");
 var mantraBtn = document.querySelector("#rd2");
-var recieveMessageBtn = document.querySelector("#recieve-message");
+var receiveMessageBtn = document.querySelector("#receive-message");
 
-recieveMessageBtn.addEventListener('click', createMessage);
+receiveMessageBtn.addEventListener('click', createMessage);
 
 console.log(affirmationBtn);
 
