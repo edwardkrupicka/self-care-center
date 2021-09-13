@@ -6,19 +6,29 @@
   </head>
   <body>
     <header>
-      <h1 class="main">✨Self Care Center✨</h1>
-      <h2 class="main">Which type of message?</h2>
+      <h1 class="header">✨ Self Care Center ✨</h1>
+      <h2 class="header">Which type of message?</h2>
     </header>
-    <section id="first-box">
-      <input></input>
-      <input></input>
-      <button></button>
+    <section class=flex-item id="input-box">
+      <form>
+        <div>
+          <input class= radio type="radio" id="rd1" value="">
+          <label class="btn-label">affirmation</label>
+          <input class= radio type="radio" id="rd2" value="">
+          <label class="btn-label">mantra</label>
+          <button class=button type="button" id="recieve-message">Recieve Message</button>
+        </div>
+      </form>
     </section>
-    <section class="output-box">
-      <img src="assets/meditate.svg"/>
-    </section>
+    <section id="output-box">
+      <form>
+        <article>
+        <p class="message"></p>
+        <img class="meditation-svg" src="assets/meditate.svg" alt="meditation person">
+        </article>
+      </section>
+      <button class="button" type="button" id="clear-message">Clear Message</button>
     <foooter>
-      <button id="clear-message"></button>
     </footer>
     <script type="text/javascript" src="main.js"></script>
   </body>
